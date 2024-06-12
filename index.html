@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ogfrankie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="/"
+          ><img
+            src="https://media-cdn.tripadvisor.com/media/photo-s/0a/37/bb/1b/frankie-s-logo.jpg"
+            alt="Frankie's Logo"
+        /></a>
+      </div>
+      <div class="nav-items" id="nav-items">
+        <ul>
+          <li><a href="#background">Home</a></li>
+          <li><a href="#home">Menu</a></li>
+          <li><a href="#home">Offers</a></li>
+          <li><a href="#home">About us</a></li>
+          <li><a href="#home">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt" style="color: black;"></i>
+      </div>
+    </nav>
+    <!-- appearing screen -->
+    <div class="background" id="background"></div>
+    <div class="bottom-left">
+      <p class="visit-text">Visit our<br />Frankie store</p>
+      <button class="cta" id="visit-button">
+        <span class="hover-underline-animation"> Order now </span>
+        <svg
+          id="arrow-horizontal"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="10"
+          viewBox="0 0 46 16"
+        >
+          <path
+            id="Path_10"
+            data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+            transform="translate(30)"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Home screen -->
+
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+      "
+      id="resp"
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          margin-top: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 40%;
+        "
+        id="find"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <h1 style="font-size: 32px; margin: 0; text-align: center;">
+          Find Your Favourite Frankie
+        </h1>
+        <br />
+        <br />
+        <h3 style="font-weight: 400; text-align: center;">
+          "Discover your beloved Frankie, where every bite tells a story. Our
+          commitment to quality and flavor ensures each visit is a delightful
+          journey of culinary bliss."
+        </h3>
+      </div>
+      <!-- slider -->
+      <div
+        class="gallery"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+        style="width: 40%;"
+      >
+        <!-- =============== SWIPER GALLERY CARDS =============== -->
+        <div class="swiper gallery-cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="fr1.png" alt="image gallery" class="gallery__img" />
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Chicken frankie</h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="fr2.png" alt="image gallery" class="gallery__img" />
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Chicken frankie</h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="fr3.png" alt="image gallery" class="gallery__img" />
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Chicken frankie</h3>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img
+                  src="Designer.jpeg"
+                  alt="image gallery"
+                  class="gallery__img"
+                />
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Chicken frankie</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
+        <div class="gallery__overflow">
+          <div class="swiper gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="fr1.png"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="fr2.png"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="fr3.png"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="Designer.jpeg"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <!-- <div class="swiper-slide">
+                  <div class="gallery__thumbnail">
+                      <img src="assets/img/img5.png" alt="image thumbnail" class="gallery__thumbnail-img">
+                  </div>
+              </div> -->
+            </div>
+
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Swiper arrows -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <!-- what makes our frankies to purchase -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+      "
+      id="something"
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          margin-top: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 50%;
+        "
+        id="find"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <h1 style="font-size: 32px; margin: 0; text-align: center;">
+          What makes our Frankie’s to purchase
+        </h1>
+        <br />
+        <h3 style="font-weight: 400; text-align: center;">
+          Savor the unique blend of spices, tender meats, and fresh ingredients,
+          crafting each Frankie into a culinary masterpiece worth indulging in.
+        </h3>
+      </div>
+      <br />
+      <br />
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 20px;
+          padding-right: 20px;
+        "
+        id="dis"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <div style="width: 30%; text-align: center;" id="to-be">
+          <div
+            style="display: flex; justify-content: center; margin-bottom: 10px;"
+          >
+            <img
+              src="./variety-icon.png"
+              alt=""
+              style="height: 30px; width: 30px;"
+            />
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <h3 style="font-size: 16px; margin-bottom: 10px;">
+              Wide Range of Varieties
+            </h3>
+
+            <h5
+              style="
+                font-size: 14px;
+                font-weight: 400;
+                width: 70%;
+                margin: 0 auto;
+              "
+              id="l"
+            >
+              We offer you a wide range of varieties.
+            </h5>
+          </div>
+        </div>
+        <div style="width: 30%; text-align: center;" id="to-be">
+          <div
+            style="display: flex; justify-content: center; margin-bottom: 10px;"
+          >
+            <img
+              src="./something.png"
+              alt=""
+              style="height: 30px; width: 30px;"
+            />
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <h3 style="font-size: 16px; margin-bottom: 10px;">
+              Fresh and Tasty
+            </h3>
+
+            <h5
+              style="
+                font-size: 14px;
+                font-weight: 400;
+                width: 70%;
+                margin: 0 auto;
+              "
+              id="l"
+            >
+              We sell you healthy and tasty frankie’s with fresh items.
+            </h5>
+          </div>
+        </div>
+        <div style="width: 30%; text-align: center;" id="to-be">
+          <div
+            style="display: flex; justify-content: center; margin-bottom: 10px;"
+          >
+            <img
+              src="./trusted.png"
+              alt=""
+              style="height: 30px; width: 30px;"
+            />
+          </div>
+          <div style="display: flex; flex-direction: column;">
+            <h3 style="font-size: 16px; margin-bottom: 10px;">
+              Trusted by Thousands
+            </h3>
+
+            <h5
+              style="
+                font-size: 14px;
+                font-weight: 400;
+                width: 70%;
+                margin: 0 auto;
+              "
+              id="l"
+            >
+              Our products are trusted by many people.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 30px;">
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          margin-top: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 40%;
+          margin-bottom: 30px;
+        "
+        id="find"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <h1 style="font-size: 32px; margin: 0; text-align: center;">
+          Featured Products
+        </h1>
+        <h3
+          style="
+            font-weight: 400;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+          "
+        >
+          These products are most selling products by our company.
+        </h3>
+      </div>
+
+      <div></div>
+    </div>
+
+    <div id="card-container"></div>
+
+    <!-- end of html -->
+    <!-- script tags -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Sample data for cards (can be replaced with data from JSON)
+      const cardData = [
+        {
+          title: "Chicken Frankie",
+          description: "Spiced chicken delight",
+          price: "$19.99",
+          image:'./image-1.jpg'
+        },
+        {
+          title: "Paneer Frankie",
+          description: "Grilled paneer goodness",
+          price: "$27.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Mutton Frankie",
+          description: "Flavorful mutton wrap",
+          price: "$19.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Veggie Frankie",
+          description: "Healthy veggie medley",
+          price: "$14.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Egg Frankie",
+          description: "Egg-cellent choice",
+          price: "$13.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Aloo Frankie",
+          description: "Classic potato treat",
+          price: "$21.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Cheese Frankie",
+          description: "Cheesy indulgence",
+          price: "$19.99",
+           image:'./image-1.jpg'
+        },
+        {
+          title: "Soya Chaap Frankie",
+          description: "Savory soya twist",
+          price: "$20.99",
+           image:'./image-1.jpg'
+        },
+      ];
+
+      function generateCard(title, description, price,image) {
+        return `
+               <div class="card"  data-aos="zoom-in" data-aos-duration="1000">
+  <div class="card-img">
+       <img src=${image} alt="image gallery" class="imagee" />
+    
+    </div>
+  <div class="card-info">
+    <p class="text-title">${title}</p>
+    <p class="text-body">${description}</p>
+  </div>
+  <div class="card-footer">
+  <span class="text-title">${price}</span>
+  <div class="card-button">
+    <svg class="svg-icon" viewBox="0 0 20 20">
+      <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+      <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+      <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+    </svg>
+  </div>
+</div></div>
+          `;
+      }
+
+      // Function to render cards
+      function renderCards() {
+        const cardContainer = document.getElementById("card-container");
+        cardData.forEach((item) => {
+          const cardHTML = generateCard(
+            item.title,
+            item.description,
+            item.price,
+            item.image
+          );
+          cardContainer.innerHTML += cardHTML;
+        });
+      }
+
+      // Call renderCards function to generate cards
+      renderCards();
+    </script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- intial gsap animations -->
+    <script>
+      gsap.fromTo("#background", { opacity: 0 }, { opacity: 1, duration: 1 });
+      gsap.fromTo(
+        ".logo",
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 0.5, delay: 1 }
+      );
+      gsap.fromTo(
+        "#nav-toggle",
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 0.5, delay: 1 }
+      );
+      gsap.fromTo(
+        "#nav-items",
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 0.5, delay: 1 }
+      );
+      gsap.fromTo(
+        ".visit-text",
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 0.5, delay: 1.3 }
+      );
+      gsap.fromTo(
+        "#visit-button",
+        { opacity: 0, x: -50 },
+        { opacity: 1, x: 0, duration: 0.5, delay: 1.5 }
+      );
+     
+      document
+        .getElementById("nav-toggle")
+        .addEventListener("click", function () {
+          toggleMenu();
+        });
+
+      if (window.innerWidth < 768) {
+        document.querySelectorAll(".nav-items a").forEach((link) => {
+          link.addEventListener("click", function () {
+            toggleMenu();
+          });
+        });
+      }
+      function toggleMenu() {
+        const navItems = document.getElementById("nav-items");
+        if (navItems.classList.contains("toggled")) {
+          gsap.to(navItems, {
+            y: -50,
+            opacity: 0,
+            duration: 0.3,
+            onComplete: () => {
+              navItems.classList.remove("toggled");
+              navItems.classList.add("untoggled");
+            },
+          });
+        } else {
+          navItems.classList.remove("untoggled");
+          navItems.classList.add("toggled");
+          gsap.fromTo(
+            navItems,
+            { y: -50, opacity: 0 },
+            { y: 0, duration: 0.3, opacity: 1 }
+          );
+        }
+      }
+    </script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
