@@ -62,7 +62,7 @@
     <div class="background" id="background"></div>
     <div class="bottom-left">
       <p class="visit-text">Visit our<br />Frankie store</p>
-      <button class="cta" id="visit-button">
+      <button class="cta" id="visit-button" >
         <span class="hover-underline-animation"> Order now </span>
         <svg
           id="arrow-horizontal"
@@ -521,7 +521,11 @@
 </footer>
     <!-- end of html -->
     <!-- script tags -->
-
+    <script>
+      document.getElementById('visit-button').addEventListener('click', function () {
+          document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
+      });
+  </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
@@ -670,6 +674,7 @@ updateReview();
 
     <!-- intial gsap animations -->
     <script>
+      // document.getElementById('visit-button').addEventListener("click",window.location.href('#menu'))
       gsap.fromTo("#background", { opacity: 0 }, { opacity: 1, duration: 1 });
       gsap.fromTo(
         ".logo",
