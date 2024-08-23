@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +27,11 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
+  
+  <link rel="stylesheet" href="https://unpkg.com/embla-carousel/embla.min.css">
+  <link rel="stylesheet" href="./flickity.css" media="screen">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -33,25 +39,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="styles.css" />
+
+
+
   </head>
   <body>
     <!-- navbar -->
+     <div id="to-top" style="position: absolute;top: 0;"></div>
     <nav>
       <div class="logo">
         <a href="/"
           ><img
-            src="https://media-cdn.tripadvisor.com/media/photo-s/0a/37/bb/1b/frankie-s-logo.jpg"
+            src="./logo.png"
             alt="Frankie's Logo"
         /></a>
       </div>
       <div class="nav-items" id="nav-items">
         <ul>
-          <li><a href="#background" id="close">Home</a></li>
-          <li><a href="#card-container" id="close">Menu</a></li>
-          <li><a href="#something" id="close">About us</a></li>
-          <li><a href="#contact-us" id="close">Contact us</a></li>
+          <li><a href="#to-top" class="nav-link">Home</a></li>
+          <li><a href="#card-container" class="nav-link">Menu</a></li>
+          <li><a href="#aboutus" class="nav-link">About us</a></li>
+          <li><a href="#contact-us" class="nav-link">Contact us</a></li>
         </ul>
       </div>
       <div class="nav__toggle" id="nav-toggle">
@@ -113,127 +123,33 @@
         <br />
         <br />
         <h3 style="font-weight: 400; text-align: center;">
-          "Discover your beloved Frankie, where every bite tells a story. Our
-          commitment to quality and flavor ensures each visit is a delightful
-          journey of culinary bliss."
+          "Explore our delicious options, from creamy Butter Chicken and spicy Chicken Vindaloo to flavorful Chili Paneer and unique Caribbean Doubles. Discover your new favorite Frankie today!"
         </h3>
       </div>
-      <!-- slider -->
-      <div
-        class="gallery"
-        data-aos="zoom-in"
-        data-aos-duration="500"
-        style="width: 40%;"
-      >
-        <!-- =============== SWIPER GALLERY CARDS =============== -->
-        <div class="swiper gallery-cards">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <article class="gallery__card">
-                <img src="fr1.png" alt="image gallery" class="gallery__img" />
-                <div class="gallery__data">
-                  <h3 class="gallery__title">Chicken frankie</h3>
-                </div>
-              </article>
-            </div>
 
-            <div class="swiper-slide">
-              <article class="gallery__card">
-                <img src="fr2.png" alt="image gallery" class="gallery__img" />
-                <div class="gallery__data">
-                  <h3 class="gallery__title">Chicken frankie</h3>
-                </div>
-              </article>
-            </div>
+ 
+      <div class="gallery" data-aos="zoom-in" data-aos-duration="500">
 
-            <div class="swiper-slide">
-              <article class="gallery__card">
-                <img src="fr3.png" alt="image gallery" class="gallery__img" />
-                <div class="gallery__data">
-                  <h3 class="gallery__title">Chicken frankie</h3>
-                </div>
-              </article>
-            </div>
-
-            <div class="swiper-slide">
-              <article class="gallery__card">
-                <img
-                  src="Designer.jpeg"
-                  alt="image gallery"
-                  class="gallery__img"
-                />
-                <div class="gallery__data">
-                  <h3 class="gallery__title">Chicken frankie</h3>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
-        <div class="gallery__overflow">
-          <div class="swiper gallery-thumbs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="gallery__thumbnail">
-                  <img
-                    src="fr1.png"
-                    alt="image thumbnail"
-                    class="gallery__thumbnail-img"
-                  />
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="gallery__thumbnail">
-                  <img
-                    src="fr2.png"
-                    alt="image thumbnail"
-                    class="gallery__thumbnail-img"
-                  />
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="gallery__thumbnail">
-                  <img
-                    src="fr3.png"
-                    alt="image thumbnail"
-                    class="gallery__thumbnail-img"
-                  />
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="gallery__thumbnail">
-                  <img
-                    src="Designer.jpeg"
-                    alt="image thumbnail"
-                    class="gallery__thumbnail-img"
-                  />
-                </div>
-              </div>
-
-              <!-- <div class="swiper-slide">
-                  <div class="gallery__thumbnail">
-                      <img src="assets/img/img5.png" alt="image thumbnail" class="gallery__thumbnail-img">
-                  </div>
-              </div> -->
-            </div>
-
-            <!-- Swiper pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-
-          <!-- Swiper arrows -->
-          <div class="swiper-button-next">
-            <i class="ri-arrow-right-line"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="ri-arrow-left-line"></i>
-          </div>
-        </div>
+       
+       
+<div class="carousel-container">
+  <div class="my-slider">
+      <div>
+          <img src="https://github.com/ogfrankies/website/blob/main/Beef_frankie.JPG?raw=true" alt="Image 1">
+          <div class="text">Beef frankie</div>
       </div>
+      <div>
+          <img src="https://github.com/ogfrankies/website/blob/main/Butter_Paneer_frankie.JPG?raw=true" alt="Image 2">
+          <div class="text">Butter paneer frankie</div>
+      </div>
+      <div>
+          <img src="https://github.com/ogfrankies/website/blob/main/Chili_Chicken_frankie.JPG?raw=true" alt="Image 3">
+          <div class="text">Chilli chicken frankie</div>
+      </div>
+  </div>
+</div>
+
+    </div>
     </div>
     <br />
     <br />
@@ -270,8 +186,7 @@
         </h1>
         <br />
         <h3 style="font-weight: 400; text-align: center;">
-          Savor the unique blend of spices, tender meats, and fresh ingredients,
-          crafting each Frankie into a culinary masterpiece worth indulging in.
+          At OG Frankies, we pride ourselves on using soft homemade bread, the freshest ingredients, and authentic spices, all free from preservatives. Every bite promises an unforgettable, wholesome culinary experience.
         </h3>
       </div>
       <br />
@@ -387,32 +302,50 @@
           padding-left: 20px;
           padding-right: 20px;
           width: 40%;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
         "
         id="find"
         data-aos="zoom-in"
         data-aos-duration="500"
       >
         <h1 style="font-size: 32px; margin: 0; text-align: center;">
-          Featured Products
+          Menu
         </h1>
-        <h3
-          style="
-            font-weight: 400;
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-          "
-        >
-          These products are most selling products by our company.
-        </h3>
+      
       </div>
 
       <div></div>
     </div>
-
+    <div>
+    <h2 class="label">Frankies</h2>
     <div id="card-container"></div>
+  </div>
+  <div>
+    <h2 class="label">Rice Bowls</h2>
+    <div id="card-container-rice"></div>
+  </div>
+
+  <div>
+    <h2 class="label">Sides and Drinks</h2>
+    <div id="card-container-sides"></div>
+  </div>
+ 
 <!-- comments section -->
+ <div id="aboutus"></div>
+<div style="max-width: 95%;margin-left:50px;margin-right: 50px; margin-top: 20px;margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" data-aos="zoom-in-up" data-aos-duration="500" id="about-us">
+  <h2 class="label" style="font-size: 24px; font-weight: bold; margin-bottom: 20px; text-align: center;">About Us</h2>
+  <div  style="font-size: 16px; color: #333; line-height: 1.6; padding: 0 10px;" onclick="">
+      Welcome to OG Frankies!
+
+      At OG Frankies, we bring the vibrant flavors of Indian street food to your table with a modern twist. Our journey began with a passion for authentic, mouthwatering cuisine and a commitment to quality. Each Frankie is crafted using homemade bread and the freshest ingredients, ensuring every bite is packed with unforgettable taste.
+
+      Our menu features a range of delicious Frankies, from spicy Chilli Paneer to creamy Butter Chicken, all made with traditional spices and our special blend of masala. We take pride in our in-house preparation, free from preservatives, to deliver a genuine and wholesome culinary experience.
+
+      Whether you're a longtime fan of Indian street food or trying it for the first time, we invite you to join us at OG Frankies and savor the exceptional flavors that make our food truly special. Thank you for being a part of our journey – we can't wait to share our passion for great food with you!
+  </div>
+</div>
+
+
     <div style="width: 100%;background-color: black;color: white;display: flex;flex-direction: row;justify-content: space-between;align-items:center;padding:40px;" id="to-be-row" >
       
     <div style="display: flex;flex-direction: column;width: 50%;padding: 20px;justify-content: center;align-items: center;" id="sefe" data-aos="zoom-in-up" data-aos-duration="500">
@@ -466,27 +399,26 @@
   
   </div>
   </div>
-  <div style="border-color: rgb(0, 0, 0);border-width: 2px;border-radius: 5px;width: 50% ;display: flex;justify-content: center;align-items: center;width: 50%;" id="feg"data-aos="zoom-in-up" data-aos-duration="500" >
-  
-    <div style="border-color: rgb(0, 0, 0);border-width: 1px;border-radius: 10px;border-style: solid;width: 60%;padding: 20px;margin: 20px;"  class="flxxxx" id="contact-us">
+  <div style="border-color: rgb(0, 0, 0);border-width: 2px;border-radius: 5px;width: 50% ;display: flex;justify-content: center;align-items: center;width: 50%;" id="feg" data-aos="zoom-in-up" data-aos-duration="500">
+    <div style="border-color: rgb(0, 0, 0);border-width: 1px;border-radius: 10px;border-style: solid;width: 60%;padding: 20px;margin: 20px;" class="flxxxx" id="contact-us">
       <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" id="name" required="" autocomplete="off" style="z-index: 999;">
         <label for="name">Enter your name</label>
-    </div>
+      </div>
       <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
-        <label for="name">Enter your email</label>
-    </div>
+        <input type="email" id="email" required="" autocomplete="off" style="z-index: 999;">
+        <label for="email">Enter your email</label>
+      </div>
       <div class="inputGroup">
-        <input type="tel" required="" autocomplete="off">
-        <label for="name">Enter your number</label>
+        <input type="tel" id="number" required="" autocomplete="off" style="z-index: 999;">
+        <label for="number">Enter your number</label>
+      </div>
+      
+      <button class="button" onclick="sendEmail()">
+        <span class="textt">Connect with us</span>
+        <svg class="arrow" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
+      </button>
     </div>
-      
-    <button class="button">
-      <span class="text">Connect with us</span>
-      <svg class="arrow" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg>
-    </button>
-      
   </div>
   
       </div>
@@ -497,7 +429,7 @@
   Copyright &copy; 2024. Frankie
   </div>
   <div class="center">
-    <img src="https://images.squarespace-cdn.com/content/v1/62c7ecda71cb634d9b5c13fd/bced1cfc-36d5-46e1-8a3d-2247dd0650e0/FH%26G+Logo-01.png?format=1500w" alt="Website Logo">
+    <img src="./footer.png" alt="Website Logo">
   </div>
   <div class="right">
     <div>
@@ -510,43 +442,140 @@
        <span class="tooltip" style="padding:5px 11px">  X   </span>
        <span><i class="fa-brands fa-x-twitter" ></i></span>
    </li>
-   <li class="icon instagram" id='somee'>
+ <a href="https://www.instagram.com/ogfrankies?igsh=ZnZmbTR3N203M2pw&utm_source=qr" target="_blank"> <li class="icon instagram" id='somee'>
        <span class="tooltip">Instagram</span>
        <span><i class="fa-brands fa-instagram"></i></span>
    </li>
+  </a> 
    
 </ul>
       </div>
   </div>
+  <div id="comingSoonModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="icon">⏳</div>
+        <h2>We are coming online soon!</h2>
+    </div>
+</div>
+
+
+
 </footer>
     <!-- end of html -->
     <!-- script tags -->
+
+    <!-- modal script -->
+
+    <script>
+      function showModal() {
+          document.getElementById('comingSoonModal').style.display = 'flex';
+      }
+
+      function closeModal() {
+          document.getElementById('comingSoonModal').style.display = 'none';
+      }
+      window.addEventListener('click', (event) => {
+          const modal = document.getElementById('comingSoonModal');
+          if (event.target === modal) {
+              closeModal();
+          }
+      });
+  </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+<script>
+    const slider = tns({
+        container: '.my-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false,
+        controls: false,
+        nav: true,
+        loop: true,
+        speed: 400,
+        swipeAngle: false,
+        mouseDrag: true,
+        navPosition: 'bottom'
+    });
+</script>
+
+    
     <script>
       document.getElementById('visit-button').addEventListener('click', function () {
           document.getElementById('card-container').scrollIntoView({ behavior: 'smooth' });
       });
   </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+$(document).ready(function () {
+  $(".nav-link").on("click", function (e) {
+  e.preventDefault();
+  const target = $(this).attr("href");
+
+  if ($(target).length) {
+    document.querySelector(target).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+});
+ 
+});
+$(document).ready(function () {
+  // Toggle the navigation menu when the nav toggle button is clicked
+  $(".nav__toggle").on("click", function () {
+    $("nav").toggleClass("toggled");
+  });
+
+  // Close the navigation menu when a nav link is clicked in mobile view
+  $(".nav-link").on("click", function () {
+    if (window.innerWidth < 768) {
+      $("nav").removeClass("toggled");
+    }
+  });
+});
+
+
+</script>
+  <script>
+    function sendEmail() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const number = document.getElementById('number').value;
+      
+      const subject = 'Contact Us Details';
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0ANumber: ${number}`;
+      
+      window.location.href = `mailto:example@example.com?subject=${subject}&body=${body}`;
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('number').value = '';
+    }
+  </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- reviews script tags -->
     <script>
       const reviews = [
         {
           img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           name: "Charan kosari",
           rating: "⭐⭐⭐⭐⭐",
-          text: "Lorem ipsum dolor sit amet, consectetur ipsum dolor sed do adipiscing elit. "
+          text: "Frankies are just awesome.!! "
         },
         {
           img: "https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          name: "Jane Smith",
+          name: "Emily",
           rating: "⭐⭐⭐⭐",
-          text: "Jane Smith had an excellent experience and thinks the service is outstanding!"
+          text: "Love the paneer frankie, so good!"
         },
         {
           img: "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          name: "John doe",
+          name: "Michael",
           rating: "⭐⭐⭐⭐⭐",
-          text: "This is a review from John Doe. He found the service very good and would recommend it to others."
+          text: "Unique taste, totally worth the money!"
         }
       ];
     
@@ -574,58 +603,64 @@ function nextReview() {
 
 updateReview();
     </script>
+    <!-- frankies card generation script tag -->
     <script>
-      // Sample data for cards (can be replaced with data from JSON)
       const cardData = [
-        {
-          title: "Chicken Frankie",
-          description: "Spiced chicken delight",
-          price: "$19.99",
-          image:'./image-1.jpg'
-        },
-        {
-          title: "Paneer Frankie",
-          description: "Grilled paneer goodness",
-          price: "$27.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Mutton Frankie",
-          description: "Flavorful mutton wrap",
-          price: "$19.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Veggie Frankie",
-          description: "Healthy veggie medley",
-          price: "$14.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Egg Frankie",
-          description: "Egg-cellent choice",
-          price: "$13.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Aloo Frankie",
-          description: "Classic potato treat",
-          price: "$21.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Cheese Frankie",
-          description: "Cheesy indulgence",
-          price: "$19.99",
-           image:'./image-1.jpg'
-        },
-        {
-          title: "Soya Chaap Frankie",
-          description: "Savory soya twist",
-          price: "$20.99",
-           image:'./image-1.jpg'
-        },
-      ];
+      {
+        title: "Butter Chicken",
+        description: "OGF Masala, Creamy Curry, Onions, Green Peppers, Cilantro ",
+        price: "$12.79",
+        image: 'https://github.com/ogfrankies/website/blob/main/Tofu_Butter_Chicken_frankie.JPG?raw=true' 
+      },
+      {
+        title: "Chicken Vindalo",
+        description: "OGF Masala, Chicken Vindaloo, Sauce, Onions, Green Peppers, Cilantro",
+        price: "$11.69",
+        image: 'https://github.com/ogfrankies/website/blob/main/Tofu_Butter_Chicken_frankie.JPG?raw=true'
+      },
+      {
+        title: "Chili Chicken",
+        description: "OGF Masala, Chili Chicken, Noodles, Onions, Green Peppers, Cilantro",
+        price: "$11.69",
+        image: 'https://github.com/ogfrankies/website/blob/main/Chili_Chicken_frankie.JPG?raw=true'
+      },
+      {
+        title: "Beef Vindalo",
+        description: "OGF Masala , Beef Vindaloo, Onions, Green Peppers, Cilantro ",
+        price: "$12.89",
+        image: 'https://github.com/ogfrankies/website/blob/main/Tofu_Butter_Chicken_frankie.JPG?raw=true' 
+      },
+      {
+        title: "Butter Paneer",
+        description: "OGF Masala, Creamy Butter Gravy, Cottage Cheese, Onions, Green Peppers, Cilantro",
+        price: "$11.69",
+        image: 'https://github.com/ogfrankies/website/blob/main/Butter_Paneer_frankie.JPG?raw=true'
+      },
+      {
+        title: "Chili Paneer",
+        description: "OGF Masala, Chili Paneer, Noodles, Onions, Green Peppers, Cilantro",
+        price: "$11.69",
+        image: 'https://github.com/ogfrankies/website/blob/main/Tofu_Butter_Chicken_frankie.JPG?raw=true'
+      },
+      {
+        title: "Paneer Tikka",
+        description: "OGF Masala, Paneer Tikka, Tamarind Sauce, Green Chutney, Pickled Onions, Onions, Green Peppers, Cilantro",
+        price: "$11.69",
+        image: 'https://github.com/ogfrankies/website/blob/main/OG_Paneer_Tikka_Facing.JPG?raw=true'
+      },
+      {
+        title: "Caribbean Doubles ",
+        description: "OGF Masala, Chickpeas, Tamarind Sauce, Green Chutney, Onions, Green Peppers, Cilantro ",
+        price: "$10.59",
+        image: 'https://github.com/ogfrankies/website/blob/main/Butter_Paneer_frankie.JPG?raw=true' 
+      },
+      {
+        title: "Butter Tofu",
+        description: "OGF Masala, Butter Tofu Sauce, Onions, Green Peppers, Cilantro",
+        price: "$11.79",
+        image: 'https://github.com/ogfrankies/website/blob/main/Tofu_Butter_Chicken_frankie.JPG?raw=true' 
+      }
+    ];
 
       function generateCard(title, description, price,image) {
         return `
@@ -640,7 +675,7 @@ updateReview();
   </div>
   <div class="card-footer">
   <span class="text-title">${price}</span>
-  <div class="card-button">
+  <div class="card-button" onclick="showModal()">
     <svg class="svg-icon" viewBox="0 0 20 20">
       <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
       <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
@@ -668,13 +703,200 @@ updateReview();
       // Call renderCards function to generate cards
       renderCards();
     </script>
+      <!-- rice bowls card generation script tag -->
+     <script>
+      const riceData = [
+        {
+          title: "Butter Chicken",
+          description: "OGF Masala, Creamy Curry, Onions, Green Peppers, Cilantro. Pickled Onions",
+          price: "$13.79",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_9_RB_Butter_Tofu_Center.JPG?raw=true'
+        },
+        {
+          title: "Chicken Vindalo",
+          description: "OGF Masala, Chicken Vindaloo, Sauce, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.69",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_4_RB_Butter%20Tofu_Menu.JPG?raw=true'
+        },
+        {
+          title: "Chili Chicken",
+          description: "OGF Masala, Chili Chicken, Noodles, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.69",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_1_RB_Chili_Chicken_Center.JPG?raw=true'
+        },
+        {
+          title: "Beef Vindalo",
+          description: "OGF Masala , Beef Vindaloo, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$13.89",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_6_RB_Beef_V_center.JPG?raw=true'
+        },
+        {
+          title: "Butter Paneer",
+          description: " OGF Masala, Creamy Butter Gravy, Cottage Cheese, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.69",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_3_RB_Butter_Paneer_menu.JPG?raw=true'
+        },
+        {
+          title: "Chili Paneer",
+          description: " OGF Masala, Chili Paneer, Noodles, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.69",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_3_RB_Butter_Paneer_menu.JPG?raw=true'
+        },
+        {
+          title: "Paneer TIKKA",
+          description: " OGF Masala, Paneer Tikka, Tamarind Sauce, Green Chutney, Pickled Onions, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.69",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_4_RB_Butter%20Tofu_Menu.JPG?raw=true'
+        },
+        {
+          title: "Caribbean Doubles",
+          description: "OGF Masala, Chickpeas,Tamarind Sauce,Green Chutney, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$11.59",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_4_RB_Butter%20Tofu_Menu.JPG?raw=true'
+        },
+        {
+          title: "Butter Tofu",
+          description: "OGF Masala, Butter Tofu Sauce, Onions, Green Peppers, Cilantro, Pickled Onions",
+          price: "$12.79",
+          image: 'https://github.com/ogfrankies/website/blob/main/OG_9_RB_Butter_Tofu_Center.JPG?raw=true'
+        },
+      ];
+  
+      function generateCard(title, description, price, image) {
+        return `
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="${image}" alt="image gallery" class="imagee" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">${title}</p>
+              <p class="text-body">${description}</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">${price}</span>
+              <div class="card-button" onclick="showModal()">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+  
+      function renderRiceCards() {
+        const cardContainer = document.getElementById("card-container-rice");
+        riceData.forEach((item) => {
+          const cardHTML = generateCard(
+            item.title,
+            item.description,
+            item.price,
+            item.image
+          );
+          cardContainer.innerHTML += cardHTML;
+        });
+      }
+  
+      renderRiceCards();
+    </script>
+
+    <!-- slides card generation script tag -->
+    <script>
+      const sidesData = [
+        {
+          title: "OGF Fries",
+          description: "Topped with OGF Special Spice",
+          price: "$4.79",
+          image: 'https://github.com/ogfrankies/website/blob/main/french_fries.jpg?raw=true'
+        },
+        {
+          title: "samosas",
+          description: "Two large pieces with dipping sauce.Choices: Beef, Chicken and Vegetarian",
+          price: "$5.29",
+          image: 'https://github.com/ogfrankies/website/blob/main/samosa.jpg?raw=true'
+        },
+        {
+          title: "Samosa CHAAT",
+          description: "One large Chickpea Samosa topped with Yogurt, Mint Chutney, Tamarind, Spices, Onions and Coriander ",
+          price: "$6.59",
+          image: 'https://github.com/ogfrankies/website/blob/main/chaat.png?raw=true'
+        },
+        {
+          title: "Soft Drink",
+          description: "Choices are displayed on the counter ",
+          price: "$2.89",
+          image: 'https://github.com/ogfrankies/website/blob/main/cool_drinks.jpg?raw=true'
+        },
+        {
+          title: "Mango Lassi",
+          description: "A sweet and tart lassi flavored with mangoes ",
+          price: "$5.79",
+            image: 'https://github.com/ogfrankies/website/blob/main/mango.jpg?raw=true'
+        },
+        {
+          title: "Yogurt Drink",
+          description: "Elegant yogurt drink is prepared with rich flavor. ",
+          price: "$3.79",
+          image: 'https://github.com/ogfrankies/website/blob/main/yogurt.jpg?raw=true'
+        },
+        {
+          title: "Water Bottle",
+          description: "Spring Water",
+          price: "$1.99",
+          image: 'https://github.com/ogfrankies/website/blob/main/water_bottle.jpg?raw=true'
+        },
+      ];
+  
+      function generateCard(title, description, price, image) {
+        return `
+          <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card-img">
+              <img src="${image}" alt="${title}" class="imagee" />
+            </div>
+            <div class="card-info">
+              <p class="text-title">${title}</p>
+              <p class="text-body">${description}</p>
+            </div>
+            <div class="card-footer">
+              <span class="text-title">${price}</span>
+              <div class="card-button" onclick="showModal()">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+  
+      function renderSidesCards() {
+        const cardContainer = document.getElementById("card-container-sides");
+        sidesData.forEach((item) => {
+          const cardHTML = generateCard(
+            item.title,
+            item.description,
+            item.price,
+            item.image
+          );
+          cardContainer.innerHTML += cardHTML;
+        });
+      }
+  
+      // Call function to generate sides cards
+      renderSidesCards();
+    </script>
+
+
     <script>
       AOS.init();
     </script>
 
     <!-- intial gsap animations -->
     <script>
-      // document.getElementById('visit-button').addEventListener("click",window.location.href('#menu'))
       gsap.fromTo("#background", { opacity: 0 }, { opacity: 1, duration: 1 });
       gsap.fromTo(
         ".logo",
@@ -719,28 +941,44 @@ updateReview();
           });
         });
       }
-      function toggleMenu() {
-        const navItems = document.getElementById("nav-items");
-        if (navItems.classList.contains("toggled")) {
-          gsap.to(navItems, {
-            y: -50,
-            opacity: 0,
-            duration: 0.3,
-            onComplete: () => {
-              navItems.classList.remove("toggled");
-              navItems.classList.add("untoggled");
-            },
-          });
-        } else {
-          navItems.classList.remove("untoggled");
-          navItems.classList.add("toggled");
-          gsap.fromTo(
-            navItems,
-            { y: -50, opacity: 0 },
-            { y: 0, duration: 0.3, opacity: 1 }
-          );
-        }
-      }
+      document.addEventListener("DOMContentLoaded", function() {
+  // Function to toggle the navigation menu
+  function toggleMenu() {
+    const navItems = document.getElementById("nav-items");
+    if (navItems.classList.contains("toggled")) {
+      gsap.to(navItems, {
+        y: -50,
+        opacity: 0,
+        duration: 0.3,
+        onComplete: () => {
+          navItems.classList.remove("toggled");
+          navItems.classList.add("untoggled");
+        },
+      });
+    } else {
+      navItems.classList.remove("untoggled");
+      navItems.classList.add("toggled");
+      gsap.fromTo(
+        navItems,
+        { y: -50, opacity: 0 },
+        { y: 0, duration: 0.3, opacity: 1 } 
+      );
+    }
+  }
+
+  // Event listener for nav toggle button
+  document.getElementById("nav-toggle").addEventListener("click", toggleMenu);
+
+  // Event listener for navigation links
+  if (window.innerWidth < 768) {
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", function() {
+        toggleMenu();
+      });
+    });
+  }
+});
+
     </script>
     <script src="assets/js/swiper-bundle.min.js"></script>
 
